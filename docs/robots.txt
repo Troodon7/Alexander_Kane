@@ -1,0 +1,35 @@
+# ============================================================================
+# robots.txt — Alexander Kane
+# ============================================================================
+
+# I saw CloudSecurityOfficeHours/csoh.org had one of these
+# and panicked that I didn't. So here it is.
+# All dressed up with nowhere to go.
+
+# This robots.txt is protecting exactly 3 pages.
+# The security equivalent of hiring a bouncer for your living room.
+
+# One day this site will have enough pages to justify a robots.txt.
+# Until then, this file exists purely to impress security engineers
+# who check for it. You know who you are.
+
+# I audited csoh.org's security posture and realized
+# I was missing a robots.txt. This is my incident response.
+# Severity: Critical (to my ego)
+
+# Dear crawlers,
+# There are 3 pages. You'll be fine. But csoh.org had one and 
+# they have 2000+ security professionals watching,
+# so here we are.
+# Better safe than roasted in a Friday Zoom call.
+
+# User-agent: *
+# Allow: /
+
+# Sitemap: lol
+
+# User-agent: AhrefsBot
+# Crawl-delay: 10
+
+# User-agent: SemrushBot
+# Crawl-delay: 10

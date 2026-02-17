@@ -1,0 +1,800 @@
+/* ============================================
+   RESET & BASE
+   ============================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #1a202c;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  padding: 3rem 1.5rem;
+  min-height: 100vh;
+}
+
+/* ============================================
+   LAYOUT
+   ============================================ */
+.page-wrapper {
+  min-height: 100vh;
+  animation: pageIn 0.5s ease-out;
+}
+
+@keyframes pageIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+body.fade-out {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #ffffff;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+.header {
+  background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 50%, #8b5cf6 100%);
+  color: white;
+  padding: 4rem 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+  pointer-events: none;
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  letter-spacing: -1px;
+  background: linear-gradient(to right, #ffffff, #e0f2fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header .tagline {
+  font-size: 1.25rem;
+  font-weight: 400;
+  opacity: 0.95;
+  margin-bottom: 2rem;
+  color: #e0f2fe;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info span,
+.contact-info a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.contact-info a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Export button */
+.export-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.25rem;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.export-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.header-actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+/* ============================================
+   CONTENT
+   ============================================ */
+.content {
+  padding: 3rem;
+  background: #ffffff;
+}
+
+/* ============================================
+   SECTIONS
+   ============================================ */
+.section {
+  margin-bottom: 3rem;
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #0ea5e9, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #e2e8f0;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(135deg, #0ea5e9, #6366f1);
+}
+
+/* ============================================
+   SUMMARY
+   ============================================ */
+.summary {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #475569;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid #0ea5e9;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================
+   SKILLS
+   ============================================ */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-category {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.skill-category:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-color: #0ea5e9;
+}
+
+.skill-category h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #0ea5e9, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.75rem;
+}
+
+.skill-category p {
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+/* ============================================
+   EXPERIENCE
+   ============================================ */
+.job {
+  margin-bottom: 2.5rem;
+  padding: 1.75rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.job:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border-color: #0ea5e9;
+}
+
+.job:last-child {
+  margin-bottom: 0;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.job-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-top: 0.5rem;
+}
+
+.job-company {
+  font-size: 1.15rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #0ea5e9, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.job-location {
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+.job-date {
+  font-size: 0.9rem;
+  color: #64748b;
+  font-weight: 500;
+  background: #f1f5f9;
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+}
+
+.job-description {
+  margin-top: 1rem;
+}
+
+.job-description ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.job-description li {
+  padding-left: 1.75rem;
+  margin-bottom: 0.75rem;
+  position: relative;
+  line-height: 1.8;
+  color: #475569;
+}
+
+.job-description li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  background: linear-gradient(135deg, #0ea5e9, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.job-description li.highlight {
+  color: #475569;
+  font-weight: inherit;
+}
+
+.job-description li.highlight::before {
+  background: linear-gradient(135deg, #0ea5e9, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================
+   EDUCATION
+   ============================================ */
+.education {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  padding: 1.75rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.education h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.education p {
+  color: #64748b;
+  font-size: 1rem;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  body {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .header {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .header h1 {
+    font-size: 2.25rem;
+  }
+
+  .header .tagline {
+    font-size: 1.1rem;
+  }
+
+  .content {
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-info {
+    gap: 1rem;
+  }
+
+  .job-header {
+    flex-direction: column;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================
+   DARK MODE
+   ============================================ */
+body.dark-mode {
+  background: #0f172a;
+}
+
+body.dark-mode .container {
+  background: #1e293b;
+}
+
+body.dark-mode .content {
+  background: #1e293b;
+}
+
+body.dark-mode .summary {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  color: #cbd5e1;
+  border-left-color: #0ea5e9;
+}
+
+body.dark-mode .section-title {
+  border-bottom-color: #334155;
+}
+
+body.dark-mode .skill-category {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  border-color: #475569;
+}
+
+body.dark-mode .skill-category:hover {
+  border-color: #0ea5e9;
+}
+
+body.dark-mode .skill-category p {
+  color: #94a3b8;
+}
+
+body.dark-mode .job {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  border-color: #475569;
+}
+
+body.dark-mode .job:hover {
+  border-color: #0ea5e9;
+}
+
+body.dark-mode .job-title {
+  color: #e2e8f0;
+}
+
+body.dark-mode .job-location {
+  color: #94a3b8;
+}
+
+body.dark-mode .job-date {
+  color: #94a3b8;
+  background: #334155;
+}
+
+body.dark-mode .job-description li {
+  color: #cbd5e1;
+}
+
+body.dark-mode .education {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  border-color: #475569;
+}
+
+body.dark-mode .education h3 {
+  color: #e2e8f0;
+}
+
+body.dark-mode .education p {
+  color: #94a3b8;
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+@media print {
+  /* --- Hide non-print elements --- */
+  .no-print {
+    display: none !important;
+  }
+
+  /* --- Page setup --- */
+  html {
+    font-size: 11px;
+  }
+
+  @page {
+    margin: 0.4in 0.5in;
+    size: letter;
+  }
+
+  body {
+    background: white !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #111 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page-wrapper {
+    padding: 0;
+    min-height: auto;
+    animation: none !important;
+  }
+
+  .container {
+    max-width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  /* --- Header: keep gradient for color --- */
+  .header {
+    background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 50%, #8b5cf6 100%) !important;
+    padding: 1.25rem 1.5rem !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .header::before {
+    display: none;
+  }
+
+  .header h1 {
+    font-size: 1.6rem !important;
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+    background: none !important;
+  }
+
+  .header .tagline {
+    font-size: 0.8rem !important;
+    color: #e0f2fe !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .contact-info {
+    gap: 1rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  .contact-info span,
+  .contact-info a {
+    font-size: 0.75rem !important;
+    padding: 0.25rem 0.6rem !important;
+    background: rgba(255, 255, 255, 0.15) !important;
+    color: white !important;
+  }
+
+  /* --- Content --- */
+  .content {
+    padding: 1.25rem 1.5rem 1rem !important;
+  }
+
+  /* --- Sections --- */
+  .section {
+    margin-bottom: 1.25rem !important;
+    animation: none !important;
+  }
+
+  .section-title {
+    font-size: 1.1rem !important;
+    color: #0ea5e9 !important;
+    -webkit-text-fill-color: #0ea5e9 !important;
+    background: none !important;
+    margin-bottom: 0.75rem !important;
+    padding-bottom: 0.4rem !important;
+    border-bottom: 1.5px solid #0ea5e9 !important;
+  }
+
+  .section-title::after {
+    display: none !important;
+  }
+
+  /* --- Summary --- */
+  .summary {
+    font-size: 0.8rem !important;
+    line-height: 1.55 !important;
+    color: #334155 !important;
+    background: #f8fafc !important;
+    padding: 0.85rem 1rem !important;
+    border-radius: 4px !important;
+    border-left: 3px solid #0ea5e9 !important;
+    box-shadow: none !important;
+  }
+
+  /* --- Skills --- */
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0.5rem !important;
+  }
+
+  .skill-category {
+    background: white !important;
+    border: 1px solid #d1d5db !important;
+    padding: 0.6rem 0.75rem !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
+
+  .skill-category:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    border-color: #d1d5db !important;
+  }
+
+  .skill-category h3 {
+    font-size: 0.75rem !important;
+    color: #0ea5e9 !important;
+    -webkit-text-fill-color: #0ea5e9 !important;
+    background: none !important;
+    margin-bottom: 0.35rem !important;
+  }
+
+  .skill-category p {
+    font-size: 0.7rem !important;
+    color: #475569 !important;
+    line-height: 1.45 !important;
+  }
+
+  /* --- Jobs --- */
+  .job {
+    background: white !important;
+    border: 1px solid #d1d5db !important;
+    padding: 0.85rem 1rem !important;
+    margin-bottom: 0.75rem !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .job:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    border-color: #d1d5db !important;
+  }
+
+  .job-header {
+    margin-bottom: 0.25rem !important;
+    gap: 0.5rem !important;
+  }
+
+  .job-company {
+    font-size: 0.9rem !important;
+    color: #0ea5e9 !important;
+    -webkit-text-fill-color: #0ea5e9 !important;
+    background: none !important;
+  }
+
+  .job-location {
+    font-size: 0.8rem !important;
+    color: #64748b !important;
+  }
+
+  .job-title {
+    font-size: 0.9rem !important;
+    color: #111 !important;
+    margin-top: 0.2rem !important;
+  }
+
+  .job-date {
+    font-size: 0.7rem !important;
+    background: #f1f5f9 !important;
+    padding: 0.15rem 0.5rem !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .job-description {
+    margin-top: 0.5rem !important;
+  }
+
+  .job-description li {
+    font-size: 0.75rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 0.3rem !important;
+    padding-left: 1rem !important;
+    color: #334155 !important;
+  }
+
+  .job-description li::before {
+    color: #0ea5e9 !important;
+    -webkit-text-fill-color: #0ea5e9 !important;
+    background: none !important;
+    font-size: 0.85rem !important;
+  }
+
+  .job-description li.highlight {
+    color: #334155 !important;
+  }
+
+  .job-description li.highlight::before {
+    color: #0ea5e9 !important;
+    -webkit-text-fill-color: #0ea5e9 !important;
+    background: none !important;
+  }
+
+  /* --- Education --- */
+  .education {
+    background: white !important;
+    border: 1px solid #d1d5db !important;
+    padding: 0.85rem 1rem !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
+
+  .education h3 {
+    font-size: 0.9rem !important;
+    color: #111 !important;
+  }
+
+  .education p {
+    font-size: 0.8rem !important;
+    color: #64748b !important;
+  }
+
+  /* --- Links --- */
+  a[href]::after {
+    content: none !important;
+  }
+
+  /* --- Dark mode overrides for print (force light output) --- */
+  body.dark-mode .container,
+  body.dark-mode .content {
+    background: #ffffff !important;
+  }
+
+  body.dark-mode .summary {
+    background: #f8fafc !important;
+    color: #334155 !important;
+  }
+
+  body.dark-mode .skill-category {
+    background: white !important;
+    border-color: #d1d5db !important;
+  }
+
+  body.dark-mode .skill-category p {
+    color: #475569 !important;
+  }
+
+  body.dark-mode .job {
+    background: white !important;
+    border-color: #d1d5db !important;
+  }
+
+  body.dark-mode .job-title {
+    color: #111 !important;
+  }
+
+  body.dark-mode .job-date {
+    background: #f1f5f9 !important;
+  }
+
+  body.dark-mode .job-description li {
+    color: #334155 !important;
+  }
+
+  body.dark-mode .education {
+    background: white !important;
+    border-color: #d1d5db !important;
+  }
+
+  body.dark-mode .education h3 {
+    color: #111 !important;
+  }
+
+  body.dark-mode .education p {
+    color: #64748b !important;
+  }
+}

@@ -1,0 +1,8 @@
+# Security Policy — Alexander Kane
+# Per RFC 9116 (https://www.rfc-editor.org/rfc/rfc9116)
+
+Contact: mailto:alexkane404@yahoo.com
+Encryption: https://troodon7.github.io/Alexander_Kane/.well-known/pgp-key.asc
+Preferred-Languages: en
+Canonical: https://troodon7.github.io/Alexander_Kane/.well-known/security.txt
+Expires: 2027-02-17T00:00:00.000Z
