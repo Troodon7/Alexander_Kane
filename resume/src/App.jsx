@@ -67,7 +67,7 @@ const resumeData = {
       company: "GT USA Wilmington",
       location: "Wilmington, DE",
       title: "Network Administrator",
-      date: "January 2018 — November 2021",
+      date: "October 2018 — November 2021",
       responsibilities: [
         { text: "Configured and maintained Cisco switches and access points; built Wi-Fi networks (Mesh, Autonomous, Controller-based) across multiple warehouses and tenants using Aruba, Cisco, Altai, and Ubiquiti.", highlight: false },
         { text: "Deployed and maintained StayLinked server and handheld clients; created VLANs for multiple company networks and tenants; installed access points (Fiber & Cat6/6A) across sites.", highlight: false },
