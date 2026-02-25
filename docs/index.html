@@ -378,6 +378,13 @@
         }
 
         // === Smooth Page Transition ===
+        // Restore page visibility when Android back button returns via bfcache.
+        // The fade-out class leaves body at opacity:0; pageshow fires on bfcache
+        // restoration (e.persisted===true) so we can remove it before it becomes visible.
+        window.addEventListener('pageshow', function(e) {
+            if (e.persisted) { document.body.classList.remove('fade-out'); }
+        });
+
         document.getElementById('resumeLink').addEventListener('click', function(e) {
             e.preventDefault();
             const href = this.href;

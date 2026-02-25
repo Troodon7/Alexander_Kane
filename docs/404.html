@@ -112,6 +112,10 @@
         </a>
     </div>
     <script>
+        // bfcache fix — same issue as index.html
+        window.addEventListener('pageshow', function(e) {
+            if (e.persisted) { document.body.classList.remove('fade-out'); }
+        });
         document.getElementById('backLink').addEventListener('click', function(e) {
             e.preventDefault();
             var href = this.href;
