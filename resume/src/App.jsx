@@ -11,15 +11,15 @@ const resumeData = {
   skills: [
     {
       category: "Security",
-      items: "Security Event Monitoring & Log Analysis | EDR | IAM (Active Directory & Entra ID) | FortiGate Firewall Administration | Security hardening & policy management"
+      items: "Security Event Monitoring & Log Analysis | EDR | IAM | FortiGate Firewall Administration | Security hardening & policy management"
     },
     {
       category: "Cloud & Infrastructure",
-      items: "AWS Cloud Deployment | Windows Server | VMware ESXI | Linux (Debian-based)"
+      items: "AWS Cloud Deployment | Windows Server | VMware ESXi | Linux (Debian-based)"
     },
     {
       category: "Identity & Collaboration",
-      items: "Active Directory & Entra ID | Microsoft 365 | SharePoint Management"
+      items: "Active Directory & Entra ID | Microsoft 365 | SharePoint Management | Intermedia (UCaaS)"
     },
     {
       category: "Networking",
@@ -30,8 +30,8 @@ const resumeData = {
       items: "Python Scripting | PowerShell | Bash | Batch Scripting | Kaseya RMM | Kaseya EDR"
     },
     {
-      category: "Customer Success",
-      items: "Technical Communication | Customer Success & Stakeholder Management"
+      category: "Leadership & Management",
+      items: "Vendor & Contract Management | Budget Oversight | Cross-functional Team Leadership | Technical Communication | Stakeholder Management"
     }
   ],
   experience: [
@@ -48,7 +48,7 @@ const resumeData = {
         { text: "Drive security outcomes by monitoring and responding to EDR alerts, applying CISA-recommended mitigations, and advising on security posture across 20+ customer environments — enabling proactive risk reduction aligned with threat intelligence and active advisories.", highlight: false },
         { text: "Use log and system data analysis to identify recurring issues, performance gaps, and security risks; deliver proactive recommendations that improve security posture and operational efficiency across supported accounts.", highlight: false },
         { text: "Manage IAM and authentication (on-prem Active Directory, Microsoft 365, SharePoint, Entra ID); support secure access, provisioning, and adoption across customer environments.", highlight: false },
-        { text: "Lead coordination for solution deployments and upgrades—including testing, validation, and change management—to ensure smooth adoption and minimal disruption; set clear expectations for users during transitions.", highlight: false },
+        { text: "Lead coordination for solution deployments and upgrades, including testing, validation, and change management, to ensure smooth adoption and minimal disruption; set clear expectations for users during transitions.", highlight: false },
         { text: "Configure and maintain firewalls (Ubiquiti, FortiGate) — policy management, site-to-site VPNs, VLAN segmentation, and security hardening — across 45+ customer environments.", highlight: false },
         { text: "Document procedures, environment details, and support notes to improve handoffs, consistency, and resolution efficiency for customers and internal teams.", highlight: false }
       ]
@@ -57,11 +57,11 @@ const resumeData = {
       company: "GT USA Wilmington",
       location: "Wilmington, DE",
       title: "Facility Manager",
-      date: "November 2021 — 2023",
+      date: "November 2021 — December 2023",
       responsibilities: [
         { text: "Stepped into a cross-functional management role to build leadership experience — overseeing facility maintenance, building controls, and budget compliance across 1,000,000+ sq ft of cargo space and 308 acres of grounds at the Port of Wilmington.", highlight: false },
         { text: "Led and managed a union team of 40+; cultivated relationships with government stakeholders including Fire Marshals, County & City Inspectors, CBP, Coast Guard, and DNREC.", highlight: false },
-        { text: "Gained hands-on experience with building automation and control systems (WebCTRL) for large-scale HVAC management — cross-disciplinary knowledge that bridges OT and IT environments and informs a broader understanding of infrastructure systems.", highlight: false },
+        { text: "Administered building automation and control systems (WebCTRL) for large-scale HVAC monitoring and management across 1,000,000+ sq ft of cargo space.", highlight: false },
         { text: "Served as incident commander for facility emergencies including power outages, environmental damage, and structural incidents.", highlight: false },
         { text: "Managed all facility installations and upgrades as project manager, overseeing execution from conception to completion across two active sites.", highlight: false }
       ]
@@ -75,7 +75,7 @@ const resumeData = {
         { text: "Configured and maintained Cisco switches and access points; built Wi-Fi networks (Mesh, Autonomous, Controller-based) across multiple warehouses and tenants using Aruba, Cisco, Altai, and Ubiquiti.", highlight: false },
         { text: "Deployed and maintained StayLinked server and handheld clients; created VLANs for multiple company networks and tenants; installed access points (Fiber & Cat6/6A) across sites.", highlight: false },
         { text: "Leveraged Bash and Python scripting for kiosk integration, remote monitoring, and reporting; engineered Batch scripts for deployment and compatibility (e.g., legacy VB/Oracle on Windows 10/11).", highlight: false },
-        { text: "Used VMware ESXI for server backups; managed servers on AWS.", highlight: false }
+        { text: "Used VMware ESXi for server backups; managed servers on AWS.", highlight: false }
       ]
     },
     {
@@ -93,7 +93,7 @@ const resumeData = {
   ],
   education: {
     school: "Newark High School",
-    major: "Major in CAD Engineering",
+    major: "CAD Engineering",
     certifications: [
       "Kaseya EDR Certified Administrator — Kaseya, 2025"
     ]
