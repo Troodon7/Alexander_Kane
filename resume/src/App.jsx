@@ -59,8 +59,11 @@ const resumeData = {
       title: "Facility Manager",
       date: "November 2021 — 2023",
       responsibilities: [
-        { text: "Managed maintenance for 1,000,000+ sq ft of cargo space; coordinated with service providers and government officials (Fire Marshals, CBP, Coast Guard, DNREC); led union team and nurtured vendor and tenant relationships.", highlight: false },
-        { text: "Served as project manager for facility installations and upgrades from conception to completion; oversaw emergency response and implemented best practices for inventory and operations.", highlight: false }
+        { text: "Stepped into a cross-functional management role to build leadership experience — overseeing operations, budget compliance, vendor relationships, and a union workforce across 1,000,000+ sq ft of cargo space and 308 acres of grounds at the Port of Wilmington.", highlight: false },
+        { text: "Led and managed a union team; cultivated relationships with government stakeholders including Fire Marshals, County & City Inspectors, CBP, Coast Guard, and DNREC — developing the executive communication and stakeholder management skills applied in IT leadership contexts.", highlight: false },
+        { text: "Gained hands-on experience with building automation and control systems (WebCTRL) for large-scale HVAC management — cross-disciplinary knowledge that bridges OT and IT environments and informs a broader understanding of infrastructure systems.", highlight: false },
+        { text: "Served as incident commander for facility emergencies (power outages, environmental damage, structural incidents); developed incident response frameworks that translate directly to IT operations and outage management.", highlight: false },
+        { text: "Managed all facility installations and upgrades as project manager, overseeing execution from conception to completion across two active sites.", highlight: false }
       ]
     },
     {
