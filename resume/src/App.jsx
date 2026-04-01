@@ -190,13 +190,18 @@ function Education({ education }) {
   return (
     <div className="education">
       <h3>{education.school}</h3>
-      <p>{education.major}</p>
+      <ul className="edu-list">
+        <li>{education.major}</li>
+      </ul>
       {education.certifications && education.certifications.length > 0 && (
-        <ul className="cert-list">
-          {education.certifications.map((cert, index) => (
-            <li key={index}>{cert}</li>
-          ))}
-        </ul>
+        <>
+          <h3 className="cert-heading">Certifications</h3>
+          <ul className="edu-list">
+            {education.certifications.map((cert, index) => (
+              <li key={index}>{cert}</li>
+            ))}
+          </ul>
+        </>
       )}
     </div>
   );

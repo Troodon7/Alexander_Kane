@@ -380,12 +380,18 @@ body.fade-out {
   font-size: 1rem;
 }
 
-.cert-list {
-  margin: 0.5rem 0 0 1rem;
-  padding: 0;
-  color: #1e293b;
-  font-size: 1rem;
+.cert-heading {
+  font-size: 1.2rem;
   font-weight: 700;
+  color: #1e293b;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.edu-list {
+  margin: 0.25rem 0 0 1rem;
+  padding: 0;
+  color: #64748b;
+  font-size: 1rem;
 }
 
 /* ============================================
@@ -502,8 +508,12 @@ body.dark-mode .education p {
   color: #94a3b8;
 }
 
-body.dark-mode .cert-list {
+body.dark-mode .cert-heading {
   color: #e2e8f0;
+}
+
+body.dark-mode .edu-list {
+  color: #94a3b8;
 }
 
 /* ============================================
@@ -755,10 +765,15 @@ body.dark-mode .cert-list {
     color: #64748b !important;
   }
 
-  .cert-list {
-    font-size: 0.8rem !important;
+  .cert-heading {
+    font-size: 0.9rem !important;
     color: #111 !important;
-    font-weight: 700 !important;
+    margin-top: 0.5rem !important;
+  }
+
+  .edu-list {
+    font-size: 0.8rem !important;
+    color: #64748b !important;
   }
 
   /* --- Links --- */
