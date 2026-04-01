@@ -41,15 +41,15 @@ const resumeData = {
       title: "Technical Account Manager",
       date: "January 2023 — Present",
       responsibilities: [
-        { text: "Manage all aspects of the managed services practice, including service delivery across multiple customer accounts, technical escalations, and end-to-end accountability for customer satisfaction and retention.", highlight: true },
-        { text: "Coordinate team resources, workflows, and service delivery standards to ensure consistent quality and timely resolution across the customer portfolio; mentor technical staff on best practices and customer communication.", highlight: true },
+        { text: "Manage all aspects of the managed services practice, including service delivery across 55+ customer accounts, technical escalations, and end-to-end accountability for customer satisfaction and retention — maintaining 0% involuntary churn across the portfolio.", highlight: true },
+        { text: "Hired to build and grow the managed services practice; coordinate a growing team, workflows, and service delivery standards to ensure consistent quality and timely resolution across the customer portfolio; mentor technical staff on best practices and customer communication.", highlight: true },
         { text: "Oversee SLA compliance, performance metrics, and service health across accounts; drive continuous improvement initiatives to enhance operational efficiency, reduce incident response time, and improve customer outcomes.", highlight: true },
-        { text: "Act as primary technical point of contact for diverse customer environments; deliver full lifecycle support for servers, desktops, firewalls, networking, and VOIP while translating technical details into clear, actionable guidance for non-technical users and management.", highlight: false },
-        { text: "Drive security outcomes by monitoring and responding to EDR alerts, applying CISA-recommended mitigations, and advising on security posture—enabling proactive risk reduction aligned with threat intelligence and active advisories.", highlight: false },
+        { text: "Act as primary technical point of contact for diverse customer environments; deliver full lifecycle support for servers, desktops, firewalls, networking, and VOIP — including UCaaS administration for 33 customers on Intermedia (phone and email) — while translating technical details into clear, actionable guidance for non-technical users and management.", highlight: false },
+        { text: "Drive security outcomes by monitoring and responding to EDR alerts, applying CISA-recommended mitigations, and advising on security posture across 20+ customer environments — enabling proactive risk reduction aligned with threat intelligence and active advisories.", highlight: false },
         { text: "Use log and system data analysis to identify recurring issues, performance gaps, and security risks; deliver proactive recommendations that improve security posture and operational efficiency across supported accounts.", highlight: false },
         { text: "Manage IAM and authentication (on-prem Active Directory, Microsoft 365, SharePoint, Entra ID); support secure access, provisioning, and adoption across customer environments.", highlight: false },
         { text: "Lead coordination for solution deployments and upgrades—including testing, validation, and change management—to ensure smooth adoption and minimal disruption; set clear expectations for users during transitions.", highlight: false },
-        { text: "Configure and maintain firewalls (Ubiquiti, FortiGate)—policy management, site-to-site VPNs, VLAN segmentation, and security hardening—across multiple customer environments.", highlight: false },
+        { text: "Configure and maintain firewalls (Ubiquiti, FortiGate) — policy management, site-to-site VPNs, VLAN segmentation, and security hardening — across 45+ customer environments.", highlight: false },
         { text: "Document procedures, environment details, and support notes to improve handoffs, consistency, and resolution efficiency for customers and internal teams.", highlight: false }
       ]
     },
@@ -60,7 +60,7 @@ const resumeData = {
       date: "November 2021 — 2023",
       responsibilities: [
         { text: "Stepped into a cross-functional management role to build leadership experience — overseeing operations, budget compliance, vendor relationships, and a union workforce across 1,000,000+ sq ft of cargo space and 308 acres of grounds at the Port of Wilmington.", highlight: false },
-        { text: "Led and managed a union team; cultivated relationships with government stakeholders including Fire Marshals, County & City Inspectors, CBP, Coast Guard, and DNREC — developing the executive communication and stakeholder management skills applied in IT leadership contexts.", highlight: false },
+        { text: "Led and managed a union team of 40+; cultivated relationships with government stakeholders including Fire Marshals, County & City Inspectors, CBP, Coast Guard, and DNREC — developing the executive communication and stakeholder management skills applied in IT leadership contexts.", highlight: false },
         { text: "Gained hands-on experience with building automation and control systems (WebCTRL) for large-scale HVAC management — cross-disciplinary knowledge that bridges OT and IT environments and informs a broader understanding of infrastructure systems.", highlight: false },
         { text: "Served as incident commander for facility emergencies (power outages, environmental damage, structural incidents); developed incident response frameworks that translate directly to IT operations and outage management.", highlight: false },
         { text: "Managed all facility installations and upgrades as project manager, overseeing execution from conception to completion across two active sites.", highlight: false }
