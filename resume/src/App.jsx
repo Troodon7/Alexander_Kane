@@ -93,7 +93,10 @@ const resumeData = {
   ],
   education: {
     school: "Newark High School",
-    major: "Major in CAD Engineering"
+    major: "Major in CAD Engineering",
+    certifications: [
+      "Kaseya EDR Certified Administrator — Kaseya, 2025"
+    ]
   }
 };
 
@@ -188,6 +191,13 @@ function Education({ education }) {
     <div className="education">
       <h3>{education.school}</h3>
       <p>{education.major}</p>
+      {education.certifications && education.certifications.length > 0 && (
+        <ul className="cert-list">
+          {education.certifications.map((cert, index) => (
+            <li key={index}>{cert}</li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
