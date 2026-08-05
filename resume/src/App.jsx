@@ -39,7 +39,7 @@ const resumeData = {
       company: "Assurance Media",
       location: "Wilmington, DE",
       title: "Managed Services Technician (Technical Account Manager)",
-      date: "January 2023 — Present",
+      date: "January 2024 — Present",
       responsibilities: [
         { text: "Manage all aspects of the managed services practice, including service delivery across 55+ customer accounts, technical escalations, and end-to-end accountability for customer satisfaction and retention — maintaining 0% involuntary churn across the portfolio.", highlight: true },
         { text: "Hired to build and grow the managed services practice; coordinate a growing team, workflows, and service delivery standards to ensure consistent quality and timely resolution across the customer portfolio; mentor technical staff on best practices and customer communication.", highlight: true },
