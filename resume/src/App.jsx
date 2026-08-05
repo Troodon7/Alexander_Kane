@@ -2,7 +2,7 @@ import React, { useCallback, useState, useEffect } from 'react';
 
 const resumeData = {
   name: "Alexander Kane",
-  tagline: "Technical Account Manager | Security & Cloud Infrastructure Specialist",
+  tagline: "Technical Account Manager | IAM & Network Operations",
   contact: {
     phone: "302-650-4556",
     email: "alexkane404@yahoo.com"
