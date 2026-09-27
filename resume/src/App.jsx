@@ -38,12 +38,25 @@ const resumeData = {
     {
       company: "Assurance Media",
       location: "Wilmington, DE",
-      title: "Managed Services Technician (Technical Account Manager)",
-      date: "January 2024 — Present",
+      title: "Manager, Managed Services",
+      date: "August 2026 — Present",
       responsibilities: [
         { text: "Manage all aspects of the managed services practice, including service delivery across 55+ customer accounts, technical escalations, and end-to-end accountability for customer satisfaction and retention — maintaining 0% involuntary churn across the portfolio.", highlight: true },
-        { text: "Hired to build and grow the managed services practice; coordinate a growing team, workflows, and service delivery standards to ensure consistent quality and timely resolution across the customer portfolio; mentor technical staff on best practices and customer communication.", highlight: true },
+        { text: "Own hiring, onboarding, mentoring, and performance management for the managed services team; coordinate workflows and service delivery standards to ensure consistent quality and timely resolution across the customer portfolio.", highlight: true },
         { text: "Oversee SLA compliance, performance metrics, and service health across accounts; drive continuous improvement initiatives to enhance operational efficiency, reduce incident response time, and improve customer outcomes.", highlight: true },
+        { text: "Travel to support sales meetings, prospective and existing customer activations, and on-site engagements — representing the managed services practice and supporting business development and account growth.", highlight: false },
+        { text: "Remain hands-on with technical delivery and serve as senior escalation point across customer environments, maintaining direct account relationships and technical credibility alongside management responsibilities.", highlight: false },
+        { text: "Develop and standardize security policies and hardening baselines across the customer portfolio, driving accounts toward a consistent security standard and improved compliance posture.", highlight: false },
+        { text: "Design and build standardized managed services offerings and delivery processes for company-wide adoption, establishing repeatable service tiers and scope definitions.", highlight: false }
+      ]
+    },
+    {
+      company: "Assurance Media",
+      location: "Wilmington, DE",
+      title: "Managed Services Technician (Technical Account Manager)",
+      date: "January 2024 — July 2026",
+      responsibilities: [
+        { text: "Hired to build and grow the managed services practice.", highlight: true },
         { text: "Act as primary technical point of contact for diverse customer environments; deliver full lifecycle support for servers, desktops, firewalls, networking, and VOIP — including UCaaS administration for 33 customers on Intermedia (phone and email) — while translating technical details into clear, actionable guidance for non-technical users and management.", highlight: false },
         { text: "Drive security outcomes by monitoring and responding to EDR alerts, applying CISA-recommended mitigations, and advising on security posture across 20+ customer environments — enabling proactive risk reduction aligned with threat intelligence and active advisories.", highlight: false },
         { text: "Use log and system data analysis to identify recurring issues, performance gaps, and security risks; deliver proactive recommendations that improve security posture and operational efficiency across supported accounts.", highlight: false },

@@ -1,1 +1,6 @@
 node_modules/
+
+# Raw, uncropped photo uploads — never committed. Only a small processed
+# derivative (cropped/resized) gets embedded in the site/vCard.
+LinkedInHeadshot.jpg
+*.heic
